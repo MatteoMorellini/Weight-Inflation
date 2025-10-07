@@ -9,7 +9,7 @@ test_datasets: [brats-met]
 mod: t2w
 
 epoch: 200
-batch_size: 2
+batch_size: 6
 
 distance_per_slice: 5
 
