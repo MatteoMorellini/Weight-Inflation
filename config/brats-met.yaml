@@ -19,7 +19,7 @@ warmup_steps: 20
 total_steps: 25000
 
 print_freq_step: 5
-val_freq_epoch: 5
+val_freq_epoch: 1
 
 image_size: 224
 model_name: ViT-L-14
