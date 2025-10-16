@@ -20,6 +20,12 @@ def create_logger(name, log_file, level=logging.INFO):
     formatter = logging.Formatter(
         "[%(asctime)s][%(filename)15s][line:%(lineno)4d][%(levelname)8s] %(message)s"
     )
+    log.propagate = False
+
+    # remove old handlers if any
+    if log.hasHandlers():
+        log.handlers.clear()
+
     fh = logging.FileHandler(log_file)
     fh.setFormatter(formatter)
     sh = logging.StreamHandler()

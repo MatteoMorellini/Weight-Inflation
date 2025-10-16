@@ -1,7 +1,7 @@
 version: v1.0.0
 random_seed: 100
 
-data_root: data
+data_root: /home/nicoc/data/Brats2D
 
 train_dataset: brats-met
 test_datasets: [brats-met]
@@ -9,7 +9,7 @@ test_datasets: [brats-met]
 mod: t2w
 
 epoch: 200
-batch_size: 6
+batch_size: 16
 
 SLICES_PER_PATIENT: 155
 START_ID: 80 
@@ -23,7 +23,7 @@ warmup_steps: 20
 total_steps: 25000
 
 print_freq_step: 5
-val_freq_epoch: 3
+val_freq_epoch: 1
 
 image_size: 224
 model_name: ViT-L-14
